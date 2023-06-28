@@ -1,0 +1,211 @@
+/* General */
+*{
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  color: #eee;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(to right, rgb(20, 147, 200), rgb(17, 54, 71));
+}
+
+.returnBtn{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: .5rem;
+  border: .1rem solid rgb(255, 30, 30);
+  color: #fff;
+  border-radius: .5rem;
+  margin: .5rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-weight: bold;
+  transition: .3s ease-in-out;
+}
+.returnBtn:hover{
+ background-color: rgb(255, 30, 30);
+}
+
+/* Container */
+.container{
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: .6rem;
+  border-radius: .8rem;
+  width: 20%;
+}
+.container fieldset{
+  border: .15rem solid dodgerblue;
+  padding: .5rem;
+}
+.container fieldset legend{
+  padding: .4rem;
+  border-radius: .3rem;
+  background-color: dodgerblue;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.container fieldset .inputBox{
+  position: relative;
+  padding-top: 1.5rem;
+}
+.container fieldset .inputUser{
+  background: inherit;
+  border: none;
+  border-bottom: .1rem solid #fff;
+  color: #fff;
+  outline: none;
+  width: 100%;
+  font-size: .9rem;
+  letter-spacing: .1rem;
+  padding-bottom: .1rem;
+}
+.container fieldset .labelInput{
+  position: absolute;
+  bottom: .2rem;
+  left: 0;
+  pointer-events: none;
+  font-size: .8rem;
+  text-transform: capitalize;
+  transition: .3s ease-in-out;
+}
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+  bottom: 1.5rem;
+  font-size: .6rem;
+  color: dodgerblue;
+}
+.container fieldset .gender{
+  padding-top: .7rem;
+  padding-bottom: .7rem;
+}
+.container fieldset .gender p{
+  font-size: .9rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: .5rem;
+}
+.container fieldset .gender input{
+  cursor: pointer;
+}
+.container fieldset .gender label{
+  text-transform: capitalize;
+  font-size: .9rem;
+  cursor: pointer;
+}
+.container fieldset .birth{
+  display: flex;
+  gap: .5rem;
+}
+.container fieldset .birth label{
+  font-size: .9rem;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-top: .5rem;
+}
+.container fieldset .birth input{
+  padding: .4rem;
+  outline: none;
+  color: #181818;
+  flex: 0.9;
+  border-radius: .3rem;
+  border: none;
+}
+.container input[type="submit"]{
+  margin-top: 1.5rem;
+  width: 100%;
+  border: none;
+  padding: .6rem;
+  border-radius: .5rem;
+  text-transform: capitalize;
+  background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+.container input[type="submit"]:hover{
+  opacity: 80%;
+}
+
+/* Section login */
+.login_container{
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 3em;
+  border-radius: 15px;
+  color: #fff;
+}
+.login_container h1{
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.login_container input{
+  padding: 15px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #181818;
+}
+.login_container form .btn{
+  background-color: dodgerblue;
+  border: none;
+  padding: 15px;
+  width: 100%;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  margin-top: 1rem;
+  transition: .3s ease-in-out;
+}
+.login_container form .btn:hover{
+  background-color: deepskyblue;
+  cursor: pointer;
+}
+
+/* Section home */
+.home{
+  display: block;
+}
+.home_box1{
+  text-align: center;
+}
+.home_box1 h1{
+  margin-bottom: 1rem;
+}
+.home_box2{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: .5rem;
+}
+.home_box2 a{
+  padding: 1rem;
+  border: .1rem solid dodgerblue;
+  border-radius: .5rem;
+  text-decoration: none;
+  transition: .3s ease-in-out;
+  text-transform: capitalize;
+}
+.home_box2 a:hover{
+  background-color: dodgerblue;
+}
+
+/* Section session */
+.session{
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+.session .navbar{
+  padding-right: 3rem;
+  margin-bottom: 1rem;
+}
